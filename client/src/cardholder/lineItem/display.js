@@ -7,10 +7,10 @@ import LineItemHeader from './Header';
 const LineItemDisplay = props => {
   return (
     <div className="line-item-display">
-      <LineItemHeader cssModifier={'-null'} />
+      <LineItemHeader />
       {
-        Object.entries(expenses).map(ary => {
-          return <LineItem key={ary[0]} data={ary[1]} cssModifier={''} />
+        Object.entries(props.displayReceipts ? receipts : expenses).map(ary => {
+          return <LineItem key={ary[0]} data={ary[1]} />
         })
       }
     </div>

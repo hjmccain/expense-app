@@ -9,16 +9,16 @@ const LineItemHeader = props => {
       <div className="line-item__element -header">
         <p>Location</p>
       </div>
-      <div className={`line-item__element -header ${props.cssModifier}`}>
+      <div className="line-item__element -header">
         <p>Project</p>
       </div>
-      <div className={`line-item__element -header ${props.cssModifier}`}>
+      <div className="line-item__element -header">
         <p>Client</p>
       </div>
-      <div className={`line-item__element -header ${props.cssModifier}`}>
+      <div className="line-item__element -header">
         <p>Comments</p>
       </div>
-      <div className={`line-item__element -header ${props.cssModifier}`}>
+      <div className="line-item__element -header">
         <p>Receipt</p>
       </div>
     </div>

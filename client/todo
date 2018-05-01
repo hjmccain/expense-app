@@ -1,6 +1,6 @@
 √ Create expenses data
 √ Create receipts data
-- Populate lineItemDisplay with receipts
-- Change lineItemDisplay for expenses display
+√ Populate lineItemDisplay with receipts
+√ Change lineItemDisplay for expenses display
 - Switch how lineItemDisplay is populated when Inbox / My Receipts is clicked
 - "View more" button, and lazy-load more lineItems on click
