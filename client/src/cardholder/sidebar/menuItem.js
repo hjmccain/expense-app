@@ -2,7 +2,9 @@ import React from 'react';
 
 const SidebarMenuItem = props => {
   return (
-    <div>{props.label}</div>
+    <div className="sidebar-menu__item">
+      <a href="#">{props.label}</a>
+    </div>
   );
 };
 

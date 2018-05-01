@@ -3,7 +3,7 @@ import MenuItem from './MenuItem';
 
 const SidebarMenu = props => {
   return (
-    <div>
+    <div className="sidebar-menu">
       <MenuItem label="Inbox" />
       <MenuItem label="My Receipts" />
     </div>
