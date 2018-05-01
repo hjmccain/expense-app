@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import LineItemHeader from '../Header';
 
 it('mounts LineItemHeader without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<LineItemHeader />, div);
+  shallow(<LineItemHeader />);
 });

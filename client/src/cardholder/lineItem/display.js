@@ -4,7 +4,7 @@ import LineItemHeader from './Header';
 
 const LineItemDisplay = props => {
   return (
-    <div>
+    <div className="line-item-display">
       <LineItemHeader />
       <LineItem />
       <LineItem />
