@@ -1,0 +1,10 @@
+.app-container {
+  .app-container__content {
+    @include breakpoint(mobile) {
+      margin: 10px;
+    }  
+    @include breakpoint(tablet) {
+      margin: 50px;
+    }
+  }
+}

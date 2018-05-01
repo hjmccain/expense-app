@@ -5,9 +5,9 @@ import LineItemDisplay from 'cardholder/lineItem/Display';
 
 const App = props => {
   return (
-    <div>
+    <div className="app-container">
       <AppHeader />
-      <div className="standard-content-container">
+      <div className="app-container__content">
         <SideBarMenu />
         <LineItemDisplay />
       </div>

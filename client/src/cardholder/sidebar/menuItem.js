@@ -3,7 +3,7 @@ import React from 'react';
 const SidebarMenuItem = props => {
   return (
     <div className="sidebar-menu__item">
-      <a href="#">{props.label}</a>
+      <a href="google.com">{props.label}</a>
     </div>
   );
 };
