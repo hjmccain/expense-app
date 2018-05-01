@@ -1,5 +1,12 @@
 .app-container {
+  .app-container__header {
+    display: flex;
+  }
+
   .app-container__content {
+    display: grid;
+    grid-template-columns: 100px auto;
+
     @include breakpoint(mobile) {
       margin: 10px;
     }  
