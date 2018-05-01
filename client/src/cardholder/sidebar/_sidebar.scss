@@ -5,6 +5,6 @@
 
   .sidebar-menu__element {
     background: lightcoral;
-    @extend %fully-centered-child;
+    @extend %vertical-center-child;
   }
 }

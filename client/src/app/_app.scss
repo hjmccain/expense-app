@@ -1,6 +1,11 @@
 .app-container {
   .app-container__header {
+    height: 80px;
+    background: blanchedalmond;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
   }
 
   .app-container__content {
