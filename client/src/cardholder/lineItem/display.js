@@ -13,6 +13,7 @@ const LineItemDisplay = props => {
           return <LineItem key={ary[0]} data={ary[1]} />
         })
       }
+      <button className="line-item-display__load-more">Load More</button>
     </div>
   );
 };

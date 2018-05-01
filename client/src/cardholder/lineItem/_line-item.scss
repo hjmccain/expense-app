@@ -3,6 +3,11 @@
   grid-auto-rows: minmax(50px, auto);
   grid-gap: 2px;
 
+  .line-item-display__load-more {
+    width: 200px;
+    margin: 10px auto 0 auto;
+  }
+
   .line-item {
     display: grid;
     grid-template-columns: 10% 18% 18% 18% 22% 10%;

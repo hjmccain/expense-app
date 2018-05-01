@@ -28,7 +28,7 @@ export const receipts = {
     location: 'Shaw\'s',
     project: 'DaVinci Photoshoot',
     client: 'DaVinci',
-    comments: 'Ingredients for DaVinci recipe photoshoot & some kitchen supplies (whisk, wooden spoons, & mixing bowl)',
+    comments: 'Ingredients for DaVinci recipe photoshoot + some kitchen supplies (whisk, wooden spoons, & mixing bowl)',
     receipt: null
   }
 }
