@@ -4,9 +4,8 @@ import MenuItem from './MenuItem';
 const SidebarMenu = props => {
   return (
     <div>
-      <MenuItem />
-      <MenuItem />
-      <MenuItem />
+      <MenuItem label="Inbox" />
+      <MenuItem label="My Receipts" />
     </div>
   );
 };
