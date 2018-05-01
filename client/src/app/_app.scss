@@ -9,12 +9,12 @@
 
     @include breakpoint(mobile) {
       grid-template-columns: auto;
-      grid-template-rows: 100px auto;
+      grid-template-rows: 150px auto;
       margin: 10px;
     }  
     @include breakpoint(tablet) {
       max-width: 1600px;
-      grid-template-columns: 100px auto;
+      grid-template-columns: 150px auto;
       grid-template-rows: auto;
       margin: 50px;
     }

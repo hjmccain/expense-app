@@ -1,0 +1,10 @@
+.sidebar-menu {
+  display: grid;
+  grid-template-rows: 40px 40px;
+  grid-gap: 2px;
+
+  .sidebar-menu__element {
+    background: lightcoral;
+    @extend %fully-centered-child;
+  }
+}

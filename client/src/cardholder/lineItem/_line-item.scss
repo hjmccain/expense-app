@@ -10,6 +10,7 @@
 
     .line-item__element {
       background: mediumslateblue;
+      @extend %fully-centered-child;
     }
 
     .-header {

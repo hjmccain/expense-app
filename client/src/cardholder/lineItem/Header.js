@@ -4,22 +4,22 @@ const LineItemHeader = props => {
   return (
     <div className="line-item -header">
       <div className="line-item__element -header">
-        Total
+        <p>Total</p>
       </div>
       <div className="line-item__element -header">
-        Location
+        <p>Location</p>
       </div>
       <div className="line-item__element -header">
-        Project
+        <p>Project</p>
       </div>
       <div className="line-item__element -header">
-        Client
+        <p>Client</p>
       </div>
       <div className="line-item__element -header">
-        Comments
+        <p>Comments</p>
       </div>
       <div className="line-item__element -header">
-        Receipt
+        <p>Receipt</p>
       </div>
     </div>
   )

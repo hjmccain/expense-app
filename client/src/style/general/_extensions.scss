@@ -1,0 +1,8 @@
+%fully-centered-child {
+  display: flex;
+      align-items: center;
+
+      > * {
+        margin-left: 8px;
+      }
+}
