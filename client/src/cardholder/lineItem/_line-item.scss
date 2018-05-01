@@ -1,6 +1,6 @@
 .line-item-display {
   display: grid;
-  grid-auto-rows: 50px;
+  grid-auto-rows: minmax(50px, auto);
   grid-gap: 2px;
 
   .line-item {
@@ -11,6 +11,9 @@
     .line-item__element {
       background: mediumslateblue;
       @extend %vertical-center-child;
+      > * {
+        padding: 10px;
+      }
     }
 
     .-header {
