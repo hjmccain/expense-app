@@ -3,12 +3,8 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-
-const { graphql, buildSchema } = require('graphql'); 
-
-const app = express();
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'client/build')));
+var graphqlHTTP = require('express-graphql');
+const { buildSchema } = require('graphql'); 
 
 const schema = buildSchema(`
   type Query {
@@ -22,7 +18,14 @@ const root = {
   }
 }
 
-graphql(schema, '{ hello }', root).then(res => console.log(res));
+const app = express();
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'client/build')));
+app.use('/graphql', graphqlHTTP({
+  schema: schema,
+  rootValue: root,
+  graphiql: true
+}));
 
 // Add a 'catchall' handler, so that for any requests that don't match the one(s) outlined
 // above, React's index.html file will be sent back.
