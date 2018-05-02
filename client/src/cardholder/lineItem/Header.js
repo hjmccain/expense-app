@@ -7,7 +7,7 @@ const LineItemHeader = props => {
         <p>Total</p>
       </div>
       <div className="line-item__element -header">
-        <p>Location</p>
+        <p>Description</p>
       </div>
       <div className="line-item__element -header">
         <p>Project</p>

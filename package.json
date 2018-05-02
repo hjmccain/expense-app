@@ -1,0 +1,15 @@
+{
+  "name": "expense-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hjmccain/expense-app.git",
+  "author": "hjmccain <hannahjmccain@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
+}

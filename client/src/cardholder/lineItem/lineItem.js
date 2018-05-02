@@ -7,7 +7,7 @@ const LineItem = props => {
         <p>${props.data.total}</p>
       </div>
       <div className="line-item__element">
-        <p>{props.data.location}</p>
+        <p>{props.data.description}</p>
       </div>
       <div className="line-item__element">
         <p>{props.data.project}</p>

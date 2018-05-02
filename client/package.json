@@ -18,7 +18,7 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom --modulePaths=src",
     "eject": "react-scripts eject",
-    "dev": "NODE_PATH=src yarn start",
+    "dev": "yarn start",
     "build-css": "node-sass-chokidar --include-path ./src --inlcude-path ./node-modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --inlcude-path ./node-modules src/ -o src/ --watch --recursive"
   }

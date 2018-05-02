@@ -4,3 +4,10 @@
 √ Change lineItemDisplay for expenses display
 √ Switch how lineItemDisplay is populated when Inbox / My Receipts is clicked
 √ "View more" button, and lazy-load more lineItems on click
+√ Create database
+- Add Node backend
+- Add dummy authentication
+- Create receipt/expense graphQL schemas
+- Create receipt/expense graphQL queries
+- Populate frontend from db (via Node/graphQL)
+- Update testing for cardholder components
