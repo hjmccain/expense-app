@@ -22,7 +22,11 @@ class LineItemDisplay extends Component {
 
   updateEntries = (num) => {
     if (this.props.displayReceipts !== this.state.displayReceipts) {
-      this.setState({ displayReceipts: this.props.displayReceipts });
+      this.setState({
+        numToDisplay: 3,
+        displayReceipts: this.props.displayReceipts
+      });
+      num = 3;
     }
     this.setState({ entries: this.props.displayReceipts ? this.getArray(receipts, num) : this.getArray(expenses, num) });
   }
@@ -33,9 +37,6 @@ class LineItemDisplay extends Component {
   }
 
   render() {
-    console.log('====================================');
-    console.log(this.props, this.state);
-    console.log('====================================');
     return (
       <div className="line-item-display">
         <LineItemHeader />

@@ -8,7 +8,10 @@ class App extends Component {
     displayReceipts: true
   }
 
-  updateDisplay = boolean => this.setState({ displayReceipts: boolean });
+  updateDisplay = (e, boolean) => {
+    e.preventDefault();
+    this.setState({ displayReceipts: boolean })
+  };
 
   render() {
     return (
