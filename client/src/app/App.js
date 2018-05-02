@@ -19,7 +19,7 @@ class App extends Component {
           <LineItemDisplay displayReceipts={this.state.displayReceipts} />
         </div>
       </div>
-    )
+    );
   }
 };
 
