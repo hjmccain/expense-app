@@ -3,8 +3,6 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-// var graphqlHTTP = require('express-graphql');
-// const { buildSchema } = require('graphql');
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 const { makeExecutableSchema } = require('graphql-tools'); 
 
@@ -15,28 +13,17 @@ const typeDefs = `
 `;
 
 const resolvers = {
-  Query: { hello: () => hello }
+  Query: { hello: () => "hello world!" }
 };
 
 const schema = makeExecutableSchema({
   typeDefs,
   resolvers,
-})
-
-// const root = {
-//   hello: () => {
-//     return 'Hello world!';
-//   }
-// }
+});
 
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
-// app.use('/graphql', graphqlHTTP({
-//   schema: schema,
-//   rootValue: root,
-//   graphiql: true
-// }));
 
 // The GraphQL endpoint
 app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
