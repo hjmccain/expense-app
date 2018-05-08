@@ -1,0 +1,12 @@
+type Query {
+  receipt: Receipt!
+}
+
+type Receipt {
+  total: Int,
+  description: String,
+  project: String,
+  client: String,
+  comments: String,
+  receipt: String
+}
