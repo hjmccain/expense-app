@@ -1,12 +1,10 @@
 type Query {
-  receipt: Receipt!
+  test: String
+  expenses: [Expense!]!
 }
 
-type Receipt {
-  total: Int,
-  description: String,
-  project: String,
-  client: String,
-  comments: String,
-  receipt: String
+type Expense {
+  id: ID!
+  total: Int!
+  description: String!
 }
