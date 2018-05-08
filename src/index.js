@@ -1,28 +1,41 @@
 const { GraphQLServer } = require('graphql-yoga');
 
 const expenses = [
-  { id: 1,
+  { id:0 ,
     total: 202,
     description: 'Amazon-Rinck Prime Account'
   },
-  { id: 2,
+  { id: 1,
     total: 56,
     description: 'MikalaDavis'
   },
-  { id: 3,
+  { id: 2,
     total: 68,
     description: 'LEWISTON*USA*Orchid'
   },
-  { id: 4,
+  { id: 3,
     total: 85,
     description: 'Shaws-Supermarkets'
   }
-]
+];
+
+let idCount = expenses.length;
 
 const resolvers = {
   Query: {
     test: () => 'This is a test',
     expenses: () => expenses
+  },
+  Mutation: {
+    post: (root, args) => {
+      const expense = {
+        id: idCount++,
+        total: args.total,
+        description: args.description,
+      }
+      expenses.push(expense);
+      return expense;
+    }
   },
   Expense: {
     id: root => root.id,

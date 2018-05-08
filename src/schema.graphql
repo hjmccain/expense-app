@@ -3,6 +3,13 @@ type Query {
   expenses: [Expense!]!
 }
 
+type Mutation {
+  post(
+    total: Int!,
+    description: String!,
+  ): Expense!
+}
+
 type Expense {
   id: ID!
   total: Int!
