@@ -2,7 +2,7 @@ import Sequelize from 'sequelize';
 
 const db = new Sequelize('postgres://ijggfaxd:fBsv0xrhInPdI130dAjA0kpQzSu_lNB8@elmer.db.elephantsql.com:5432/ijggfaxd');
 
-export const Expense = db.define('_expense', {
+const ExpenseModel = db.define('_expense', {
   amount: {
     type: Sequelize.DECIMAL
   },
@@ -14,9 +14,8 @@ export const Expense = db.define('_expense', {
   }
 });
 
-// Expense.create({
-//   amount: 695,
-//   description: 'Frontify',
-// });
+export const Expense = db.models._expense;
+
+console.log(Expense);
 
 export default db;
